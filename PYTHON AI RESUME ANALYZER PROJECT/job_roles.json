@@ -1,0 +1,124 @@
+{
+    "Data Scientist": {
+        "keywords": {
+            "python": 3,
+            "machine learning": 3,
+            "data analysis": 3,
+            "sql": 2,
+            "statistics": 2,
+            "pandas": 2,
+            "numpy": 2,
+            "scikit-learn": 2,
+            "tensorflow": 2,
+            "pytorch": 2,
+            "deep learning": 2,
+            "data visualization": 2,
+            "big data": 1,
+            "hadoop": 1,
+            "spark": 1,
+            "aws": 1,
+            "azure": 1
+        },
+        "experience_keywords": {
+            "years": 2,
+            "experience": 2,
+            "developed": 1,
+            "implemented": 1,
+            "managed": 1,
+            "led": 1,
+            "created": 1,
+            "built": 1
+        }
+    },
+    "Software Engineer": {
+        "keywords": {
+            "java": 3,
+            "python": 3,
+            "c++": 3,
+            "javascript": 2,
+            "html": 2,
+            "css": 2,
+            "react": 2,
+            "angular": 2,
+            "node.js": 2,
+            "git": 2,
+            "agile": 2,
+            "software development": 3,
+            "api": 2,
+            "rest": 2,
+            "docker": 1,
+            "kubernetes": 1,
+            "ci/cd": 1,
+            "testing": 1,
+            "debugging": 1
+        },
+        "experience_keywords": {
+            "years": 2,
+            "experience": 2,
+            "developed": 1,
+            "implemented": 1,
+            "managed": 1,
+            "led": 1,
+            "created": 1,
+            "built": 1,
+            "designed": 1
+        }
+    },
+    "Data Analyst": {
+        "keywords": {
+            "sql": 3,
+            "excel": 3,
+            "tableau": 3,
+            "power bi": 3,
+            "python": 2,
+            "r": 2,
+            "data visualization": 2,
+            "statistics": 2,
+            "reporting": 2,
+            "dashboard": 2,
+            "data cleaning": 2,
+            "etl": 1,
+            "business intelligence": 1
+        },
+        "experience_keywords": {
+            "years": 2,
+            "experience": 2,
+            "analyzed": 1,
+            "reported": 1,
+            "presented": 1,
+            "created": 1,
+            "developed": 1,
+            "managed": 1
+        }
+    },
+    "Product Manager": {
+        "keywords": {
+            "product strategy": 3,
+            "roadmap": 3,
+            "user stories": 3,
+            "agile": 2,
+            "scrum": 2,
+            "market research": 2,
+            "customer development": 2,
+            "prioritization": 2,
+            "kpis": 2,
+            "metrics": 2,
+            "stakeholder management": 2,
+            "wireframes": 1,
+            "prototyping": 1,
+            "a/b testing": 1,
+            "jira": 1
+        },
+        "experience_keywords": {
+            "years": 2,
+            "experience": 2,
+            "managed": 1,
+            "led": 1,
+            "developed": 1,
+            "launched": 1,
+            "strategized": 1,
+            "coordinated": 1,
+            "oversaw": 1
+        }
+    }
+}
