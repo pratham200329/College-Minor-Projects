@@ -1,89 +1,99 @@
-# 🧠 AI Resume Analyzer
+🔥 Fire Escape Path Finder 🧑‍
 
-## Overview  
-A smart, user-friendly desktop application that analyzes resumes to determine how well they match specific job roles such as **Data Scientist**, **Software Engineer**, **Data Analyst**, and **Product Manager**.  
-It evaluates skills, experience, and generates beautiful visual reports to help users improve their resumes.
+A desktop application built with Python and Tkinter that visualizes the A* pathfinding algorithm in a simulated fire escape scenario.
 
----
+Users can interactively build a grid layout with walls, fires, a start point, and an exit. The application will then find and animate the safest (shortest) escape route, navigating around all obstacles.
 
-## Algorithm Used  
-**Keyword-based Greedy Scoring Algorithm**
-
-- Each job role has a set of weighted keywords (skills & experience terms).  
-- The app scans your resume and assigns scores based on keyword matches.  
-- Final scores are shown for each role with percentage-based match results and visual graphs.
+(Suggestion: Add a screenshot or, even better, a GIF of the application in action here!)
 
 ---
 
-## Steps  
-1. Upload or paste your resume (`.pdf`, `.docx`, or `.txt`).  
-2. Choose **Analyze Resume** to generate results.  
-3. View:
-   - Skill Match %
-   - Experience Match %
-   - Overall Role Fit %
-4. Explore interactive visualizations:
-   - Match Comparison Chart  
-   - Skill Frequency Treemap  
-   - Radar Chart  
-5. Manage job roles easily from the **⚙ Manage Roles** tab (edit, add, delete roles).  
+✨ Features
 
----
-Key Features
-📄 Multi-Format Upload: Load resumes from .pdf, .docx, or .txt files, or simply paste the text directly.
+Interactive Grid: A 20x20 clickable and draggable grid.
 
-🖼️ PDF Preview: See an instant preview of the first page of any uploaded PDF.
+*A Pathfinding:** Implements the A* search algorithm to find the optimal path from start to exit.
 
-📊 Dynamic Analysis: Get immediate feedback on how a resume matches different job roles.
+Visual Animation: Animates both the algorithm's search (visited nodes) and the final reconstructed path.
 
-💯 Detailed Scoring: View separate percentage scores for Skill Match and Experience Match, combined into an Overall Score.
-
-❗ Skill Gap Analysis: Instantly see which key skills are found in the resume and which are missing for your target job.
-
-💡 Smart Recommendations: Get a "Top Recommendation" highlighting the best-matched role and the most valuable missing keywords.
+Dynamic Obstacles: Place "Walls" (🧱) and "Fire" (🔥) as impassable obstacles.
 
 ---
 
-📈 Rich Data Visualizations:
+Full Toolset:
 
-Match Comparison: A bar chart comparing match scores across all roles.
+Start 🧑‍: Set the starting position.
 
-Skill Treemap: A visual breakdown of all skills found and their frequency.
+Exit 🚪: Set the destination.
 
-Top Skills Chart: A horizontal bar chart of the most frequent skills.
+Wall 🧱: Draw wall obstacles.
 
-Role-Fit Radar Chart: A spider-web chart showing overall fit across all defined roles.
+Fire 🔥: Draw fire obstacles.
 
----
+Eraser 🧹: Clear any cell.
 
-⚙️ Fully Customizable Roles:
+Grid Controls:
 
-A dedicated "Manage Roles" tab lets you add, edit, and delete job roles live.
+Find Escape Path: Starts/Stops the pathfinding animation.
 
-Easily update the keywords and their weights for both skills and experience.
+Randomize Grid: Automatically populates the grid with all elements.
 
-All changes are automatically saved to job_roles.json.
+Clear Path: Removes only the path and visited-node visualization.
 
-🎨 Theme Toggle: Switch between a sleek dark mode and a clean light mode with a single click.
+Clear Full Grid: Resets the entire grid.
 
----
+Speed Control: An adjustable slider to control the animation speed.
 
-🛠️ Technology Stack
-GUI: Python, tkinter, ttkbootstrap (for modern themes and widgets)
-
-File Reading: PyMuPDF (fitz), python-docx
-
-Data Analysis: pandas, numpy
-
-Data Visualization: matplotlib, seaborn, squarify
-
-Image Handling: Pillow (PIL) (for PDF preview)
+Dark Mode UI: A clean, custom dark-mode theme.
 
 ---
 
-## How to Run  
-1. Unzip the folder.  
-2. Make sure you have Python 3 installed.  
-3. Install dependencies:  
-   ```bash
-   pip install ttkbootstrap pandas numpy matplotlib seaborn PyMuPDF python-docx pillow squarify
+🚀 How to Run
+
+This application uses Python's built-in Tkinter library, so no external packages are required.
+
+Ensure you have Python 3 installed.
+
+Save the code: Save the project code as FireEscapeFinder.py.
+
+Run the application from your terminal:
+
+python FireEscapeFinder.py
+
+---
+
+🛠️ How to Use
+
+Select a Tool: Click one of the tool buttons on the right-hand panel (e.g., "Start 🧑‍", "Wall 🧱").
+
+Build Your Map: Click or click-and-drag on the grid to place your selected items.
+
+You can only have one Start and one Exit. Placing a new one will move the old one.
+
+Find the Path: Once you have a Start and an Exit, click the "Find Escape Path" button.
+
+Watch: The application will first animate the search (blue-gray cells) and then draw the final path (cyan cells) if one is found.
+
+---
+
+Controls:
+
+Use the "Animation Speed" slider to speed up or slow down the visualization.
+
+Use "Clear Path" to try again with a new layout or "Clear Full Grid" to start from scratch.
+
+---
+
+🧠 Algorithm
+
+The pathfinding logic is powered by the A (A-star) search algorithm*.
+
+It uses a Priority Queue to efficiently explore nodes with the lowest "f-cost".
+
+g-cost: The actual cost (number of steps) from the start node.
+
+h-cost (Heuristic): The estimated cost to the end, calculated using the Manhattan distance.
+
+f-cost = g-cost + h-cost
+
+The algorithm treats both Walls and Fire as impassable obstacles (it cannot travel through those cells).
