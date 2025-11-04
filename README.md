@@ -36,10 +36,6 @@ It uses the **A\*** (A-Star) Pathfinding Algorithm to compute the best escape ro
 ### ▶ How to Run
 ```bash
 python fire_escape_finder.py
-🖼 Screenshot (Add later)
-css
-Copy code
-[ Fire Escape Finder Interface Screenshot ]
 ```
 ## 🧠 2) AI Resume Analyzer
 
